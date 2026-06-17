@@ -1,0 +1,66 @@
+#include<stdio.h>
+
+void areacircle();
+void areatriangle();
+void arearectangle();
+
+void areacircle(){
+    float areac, radius;
+    printf("Enter the Radius of the Circle: ");
+    scanf("%f", &radius);
+    areac = 3.14 * radius * radius;
+    printf("The Area of Circle is: %.2f\n", areac);
+}
+
+void areatriangle(){
+    float areat, base, height;
+    printf("Enter Base and Height of Triangle: ");
+    scanf("%f%f", &base, &height);
+    areat = 0.5 * base * height;
+    printf("The Area of Triangle is: %.2f\n", areat);
+}
+
+void arearectangle(){
+    float arear, length, height1;
+    printf("Enter Length and Height of Rectangle: ");
+    scanf("%f%f", &length, &height1);
+    arear = length * height1;
+    printf("The Area of Rectangle is: %.2f\n", arear);
+}
+
+int main(){
+
+    int ch, ct;
+    while(1){
+        
+        printf("\n1. Area of Circle");
+        printf("\n2. Area of Triangle");
+        printf("\n3. Area of Rectangle");
+        printf("\nSelect your Choice: ");
+        scanf("%d", &ch);
+
+        switch(ch){
+            case 1:
+                areacircle();
+                break;
+
+            case 2:
+                areatriangle();
+                break;
+
+            case 3:
+                arearectangle();
+                break;
+
+            default:
+                printf("Invalid Choice!\n");
+        }
+
+        printf("Press 1 if you want to continue: ");
+        scanf("%d", &ct);
+
+        if(ct != 1)
+            break;
+    }
+    return 0;
+}
