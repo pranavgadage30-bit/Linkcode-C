@@ -1,0 +1,28 @@
+// Type Functions (bracket mei kuch nahi ho )
+// Type Functions (bracket mei kuch nahi ho )
+#include<stdio.h>
+
+void adddata(); // Function Declaration 
+void subdata();
+
+void adddata(){ // Function Defination 
+    int num1, num2, add;
+    printf("\nEnter the Two Numbers: ");
+    scanf("%d%d",&num1,&num2);
+    add = num1+num2;
+    printf("\nThe addition of your numbers is: %d", add);
+}
+
+void subdata(){
+    int num1, num2, sub;
+    printf("\nEnter the Two Numbers: ");
+    scanf("%d%d",&num1,&num2);
+    sub = num1-num2;
+    printf("\nThe substraction of your numbers is: %d", sub);
+}
+
+int main(){
+    adddata(); // Function calling 
+    subdata();
+    return 0;
+}
