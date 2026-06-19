@@ -1,0 +1,40 @@
+#include<stdio.h>
+void circle(float radius){
+    float area;
+    area = 3.14*radius*radius;
+    printf("The area of the circle whose radius is %f is : %f", radius, area);
+}
+
+float triangle(){
+    float base, height, areatriangle;
+    printf("\n Enter the value of Base and Height: ");
+    scanf("%f%f", &base, &height);
+    areatriangle = 0.5*base*height;
+    return areatriangle;
+}
+
+float rectangle(float lenght, float breadth){
+    float arearectangle;
+    arearectangle = lenght*breadth;
+    return arearectangle;
+    
+}
+
+
+int main(){
+    float radius, length, breadth;
+    float areatriangle, arearectangle
+
+    printf("Enter the value of the radius: ");
+    scanf("%f", &radius);
+    circle(radius);
+
+    areatriangle = triangle();
+    printf("The Area of the triangle is: %f", areatriangle);
+
+    printf("Enter the value of breadth and width: ");
+    scanf(%f%f, &lenght, &breadth);
+
+    arearectangle = rectangle(lenght,breadth);
+    printf("Area of the rectangle is: %f", arearectangle);
+}
