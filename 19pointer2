@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n1=10;
+    int n2=20;
+    int add;
+    int *ptr1,*ptr2,*ptr3;
+
+    ptr1=&n1;
+    ptr2=&n2;
+    ptr3=&add;
+
+    *ptr3=*ptr1+*ptr2;
+
+    printf("\nThe value of 1st value is = %d", *ptr1);
+    printf("\nThe value of 2nd value is = %d", *ptr2);
+
+    printf("\nThe sum of your number is = %d", *ptr3);
+}
