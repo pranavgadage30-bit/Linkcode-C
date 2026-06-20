@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int arr[5]={10,20,30,40,50};
+    int *ptr;
+    
+    ptr=&arr[0];
+
+    printf("%d", *ptr);
+    printf("\n%d", *ptr+1);  // this is wrong way to print next value the output you get will be wrong
+    printf("\n%d", *(ptr+1));
+    printf("\n%d", *(ptr+2));
+    printf("\n%d", *(ptr+3));
+    printf("\n%d", *(ptr+4));
+
+}
